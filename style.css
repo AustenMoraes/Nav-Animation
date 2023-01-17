@@ -97,24 +97,25 @@ body {
   right: 30px;
 }
 
+
+
+
 .list {
-  list-style-type: none;
-  padding: 0;
+  margin-top: 14px;
+  padding: 0px;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  
 }
 
 .list .item {
   display: inline-block;
-  width: 200px;
-}
-
-.break {
-  flex-basis: 100%;
+  width: 110px;
+  text-align: start;
 }
 
 .list .item a {
+  display: block;
   color: #373535;
   font-size: 14px;
   text-decoration: none;
@@ -122,20 +123,6 @@ body {
   padding: 3px 12px;
   margin: 0 10px;
   border-radius: 2px;
-}
-
-.list .item a::after {
-  position: absolute;
-  content: '';
-  display: block;
-  background: #4A4848;
-  height: 3px;
-  width: 0;
-  transition: .3s;
-}
-
-.list li a:hover::after {
-  width: 200px;
 }
 
 
